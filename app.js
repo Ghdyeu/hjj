@@ -3,8 +3,8 @@ const WebSocket = require('ws');
 const logcb = (...args) => console.log.bind(this, ...args);
 const errcb = (...args) => console.error.bind(this, ...args);
 
-const uuid = (process.env.UUID || 'fc173a9d-5315-411b-a246-92f3dccb0fcc').replace(/-/g, '');
-const port = process.env.PORT || 6358;
+const uuid = (process.env.UUID || '490ade06-6bba-440f-819a-acfcb895e2bf').replace(/-/g, '');
+const port = process.env.PORT || 6400;
 
 const wss = new WebSocket.Server({ port }, logcb('listen:', port));
 
